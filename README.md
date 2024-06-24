@@ -6,9 +6,12 @@ The PubMed Summarization Project aims to simplify and expedite the review proces
 
 ## Data Exploration and Preparation
 
+This all work has been done on Jupyter Notebook. Main libraries we used for data cleaning and preprocessing were pandas and nltk.
+
 ### 1. Loading the Dataset
 
 We use the PubMed Summarization dataset available on Hugging Face. This dataset contains pairs of PubMed articles and their summaries, which will be instrumental in training and evaluating our summarization model.
+For this you must have to install the dataset library of Python by using command: pip install datasets
 
 ### 2. Exploring the Dataset
 
@@ -17,6 +20,7 @@ This step helps us identify key components such as article text, summary, and an
 ### 3. Preprocessing the Dataset
 
 Preprocessing is crucial for effective summarization. Typical preprocessing steps include Tokenization, Removing special characters and stop words, Lowercasing the text, Lemmatization
+After this process we stored our data in a csv file for further operations.
 
 ## Web Application Development
 
@@ -37,9 +41,11 @@ Set up the basic structure of the Flask app to accept user input or file upload.
 
 In the templates directory, create index.html for the home page and summary.html for displaying the results.
 
+You just need to type this command on terminal to run the application: python app.py
+
 ## Integrating Text Summarization
 
-Use the API-based model (Gemini by Google) for summarization. Assuming you have API access and key.
+We used the API-based model (Gemini by Google) for summarization. Assuming you have API access and key. You can get it from Google AI studio.
 
 ## Interacting with the Application
 
