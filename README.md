@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The PubMed Summarization Project aims to simplify and expedite the review process of scientific articles from PubMed by providing a tool that summarizes lengthy texts into concise versions. This project involves loading and preparing a dataset for summarization, and developing a web application where users can input PubMed articles to receive a summarized version using a state-of-the-art API-based model like Gemini by Google.
+The PubMed Summarization Project aims to simplify and expedite the review process of articles from PubMed by providing a tool that summarizes lengthy texts into concise versions. This project involves loading and preparing a dataset for summarization, and developing a web application where users can input PubMed articles to receive a summarized version using a state-of-the-art API-based model like Gemini by Google.
 
 ## Data Exploration and Preparation
 
@@ -17,10 +17,6 @@ This step helps us identify key components such as article text, summary, and an
 ### 3. Preprocessing the Dataset
 
 Preprocessing is crucial for effective summarization. Typical preprocessing steps include Tokenization, Removing special characters and stop words, Lowercasing the text, Lemmatization
-
-### 3. Streaming Pipeline Setup
-
-A producer application was developed to stream the preprocessed data in real-time. Three consumer applications were created to subscribe to the producer's data stream, ensuring efficient distribution and processing of data.
 
 ## Web Application Development
 
@@ -53,8 +49,11 @@ Click the "Summarize" button to see the summarized version of the article.
 ## Future Improvements
 
 Enhanced Preprocessing: Implement more advanced text preprocessing techniques like stemming or lemmatization.
+
 Model Fine-Tuning: Train and fine-tune the summarization model on domain-specific data for improved accuracy.
+
 User Interface: Improve the UI for better user experience and support for more file types.
+
 Caching and Optimization: Optimize API calls and application performance.
 
 ## Conclusion
